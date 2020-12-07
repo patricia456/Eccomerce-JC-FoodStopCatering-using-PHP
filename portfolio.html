@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JC's Foodstop and Catering Services</title>
+    <link href="assets/images/logo.jpg" rel="icon">
+    <link href="assets/images/logo.jpg" rel="logo">
+    <link rel="stylesheet" type="text/css" href="port.css">
+    <!-- Web-Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Spartan:400,500,600,700,900&display=swap" rel="stylesheet">
+  <!-- //Web-Fonts -->
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style-starter.css">
+
+</head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+</style>
+<body>
+<!--header-->
+<div class="w3l-top-header">
+  <header id="site-header" class="fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark stroke">
+        <a class="navbar-brand" href="index.html" >
+          <span > <img src="assets/images/cateringLogo.png" width="60px" alt="image"></span> JC's Foodstop and Catering Services
+        </a>
+        <!-- if logo is image enable this   
+      <a class="navbar-brand" href="#index.html">
+          <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+      </a> -->
+        <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item @@index-active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item @@about-active">
+              <a class="nav-link effect-3" href="about.html">About</a>
+            </li>
+            <li class="nav-item @@services-active">
+              <a class="nav-link effect-3" href="services.html">Menu</a>
+            </li>
+            <li class="nav-item @@contact-active">
+              <a class="nav-link effect-3" href="contact.php">Contact</a>
+            </li>
+            <li class="px-4 fill-none">
+              <a href="user/login.php" class="btn btn-style btn-secondary">Online Order</a>
+              </li>
+          </ul>
+          <div class="popup">
+            <a href="#domain" class="domain" data-toggle="modal" data-target="#DomainModal">
+              <div class="hamburger1">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+</div>
+<!--/header-->
+
+<br>
+<div></div>
+<div id="myBtnContainer" style="text-align: center;">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('main')" > Main Course</button>
+  <button class="btn" onclick="filterSelection('snacks')" > Snacks</button>
+  <button class="btn" onclick="filterSelection('dessert')" > Desserts</button>
+  <button class="btn" onclick="filterSelection('drinks')" > Drinks</button>
+  <button class="btn" onclick="filterSelection('venues')" > Venues</button>
+  <button class="btn" onclick="filterSelection('events')" > Events</button>
+  <button class="btn" onclick="filterSelection('function')" >Function Room</button>
+  <button class="btn" onclick="filterSelection('student')" >Student Meal</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+
+<div class="row" id="main">
+  <div class="column main" >
+    <div class="content">
+      
+      <img src="assets/images/Main/1.jpg" alt="Mountains" style="width:60%; height:50%">
+         <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+ 
+    </div>
+  </div>
+  <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/2.jpg" alt="Mountains" style="width:60%; height:50%">
+          <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+
+    </div>
+  </div>
+  <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/3.jpg" alt="Mountains" style="width:60%; height:50%">
+          <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+
+    </div>
+  </div>
+
+  <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/4.jpg" alt="Mountains" style="width:60%; height:50%">
+          <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column main">
+    <div class="content">
+      <img src="assets/images/Main/5.jpg" alt="Mountains" style="width:60%; height:50%">
+         <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/5.5.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/6.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Girl</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/7.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Man</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/8.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+    <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/9.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+    <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/10.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+      <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/11.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+      <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/12.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+      <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/20.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+      <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/19.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+      <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/21.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+      <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/22.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+      <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/23.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+      <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/24.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+      <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/25.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+      <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/26.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+      <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/27.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+      <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/28.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+      <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/29.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+      <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/30.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+      <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/31.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+      <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/32.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+      <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/33.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+      <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/34.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+      <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/35.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+    <div class="column main">
+    <div class="content">
+       <img src="assets/images/Main/36.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <br>
+</div>
+
+<div class="row" id="snacks">
+
+
+  <div class="column snacks" >
+    <div class="content">
+       <img src="assets/images/Snacks/1.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+    <div class="column snacks">
+    <div class="content">
+       <img src="assets/images/Snacks/2.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+    <div class="column snacks">
+    <div class="content">
+       <img src="assets/images/Snacks/3.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+    <div class="column snacks">
+    <div class="content">
+       <img src="assets/images/Snacks/4.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+    <div class="column snacks">
+    <div class="content">
+       <img src="assets/images/Snacks/5.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+    <div class="column snacks">
+    <div class="content">
+       <img src="assets/images/Snacks/6.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+    <div class="column snacks">
+    <div class="content">
+       <img src="assets/images/Snacks/7.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+    <div class="column snacks">
+    <div class="content">
+       <img src="assets/images/Snacks/8.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+    <div class="column snacks">
+    <div class="content">
+       <img src="assets/images/Snacks/9.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+    <div class="column snacks">
+    <div class="content">
+       <img src="assets/images/Snacks/10.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+    <div class="column snacks">
+    <div class="content">
+       <img src="assets/images/Snacks/11.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column snacks">
+    <div class="content">
+       <img src="assets/images/Snacks/12.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+    <div class="column snacks">
+    <div class="content">
+       <img src="assets/images/Snacks/13.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+    <div class="column snacks">
+    <div class="content">
+       <img src="assets/images/Snacks/14.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+    <div class="column snacks">
+    <div class="content">
+       <img src="assets/images/Snacks/15.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+    <div class="column snacks">
+    <div class="content">
+       <img src="assets/images/Snacks/16.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+    <div class="column snacks">
+    <div class="content">
+       <img src="assets/images/Snacks/17.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  </div>
+  <div class="row" id="desserts">
+
+      <div class="column dessert" >
+    <div class="content">
+       <img src="assets/images/Dessert/1.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+        <div class="column dessert">
+    <div class="content">
+       <img src="assets/images/Dessert/2.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+        <div class="column dessert">
+    <div class="content">
+       <img src="assets/images/Dessert/3.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+        <div class="column dessert">
+    <div class="content">
+       <img src="assets/images/Dessert/4.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+        <div class="column dessert">
+    <div class="content">
+       <img src="assets/images/Dessert/5.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+        <div class="column dessert">
+    <div class="content">
+       <img src="assets/images/Dessert/6.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+        <div class="column dessert">
+    <div class="content">
+       <img src="assets/images/Dessert/7.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+        <div class="column dessert">
+    <div class="content">
+       <img src="assets/images/Dessert/8.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+        <div class="column dessert">
+    <div class="content">
+       <img src="assets/images/Dessert/9.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+        <div class="column dessert">
+    <div class="content">
+       <img src="assets/images/Dessert/10.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column dessert">
+    <div class="content">
+       <img src="assets/images/Dessert/11.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  </div>
+  <div class="row" id="drinks">
+
+    <div class="column drinks" >
+    <div class="content">
+       <img src="assets/images/Drinks/1.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+      <div class="column drinks">
+    <div class="content">
+       <img src="assets/images/Drinks/2.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+      <div class="column drinks">
+    <div class="content">
+       <img src="assets/images/Drinks/3.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+      <div class="column drinks">
+    <div class="content">
+       <img src="assets/images/Drinks/4.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+      <div class="column drinks">
+    <div class="content">
+       <img src="assets/images/Drinks/5.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+    <div class="column drinks">
+    <div class="content">
+       <img src="assets/images/Drinks/6.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+</div>
+<div class="row" id="venues">
+    <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/1.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/2.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/3.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/4.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/5.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/6.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/7.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/8.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/9.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/10.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/11.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/12.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/13.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/14.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+ <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/15.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/16.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/17.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/18.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/18.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/19.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/20.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column venues">
+    <div class="content">
+       <img src="assets/images/Venue/21.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+  </div>
+
+<div class="row" id="function">
+     <div class="column function">
+    <div class="content">
+       <img src="assets/images/function/1.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+         <div class="column function">
+    <div class="content">
+       <img src="assets/images/function/2.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+         <div class="column function">
+    <div class="content">
+       <img src="assets/images/function/3.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+         <div class="column function">
+    <div class="content">
+       <img src="assets/images/function/4.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+  </div>
+
+
+<div class="row" id="student">
+   <div class="column student">
+    <div class="content">
+      <h4>Woman</h4>
+       <img src="assets/images/student/s1.jpg" alt="Mountains" style="width:60%; height:50%">
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column student">
+    <div class="content">
+       <img src="assets/images/student/s2.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column student">
+    <div class="content">
+       <img src="assets/images/student/s3.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column student">
+    <div class="content">
+       <img src="assets/images/student/s4.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column student">
+    <div class="content">
+       <img src="assets/images/student/s5.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+
+     <div class="column student">
+    <div class="content">
+       <img src="assets/images/student/s6.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column student">
+    <div class="content">
+       <img src="assets/images/student/s7.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column student">
+    <div class="content">
+       <img src="assets/images/student/s8.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column student">
+    <div class="content">
+       <img src="assets/images/student/s9.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+     <div class="column student">
+    <div class="content">
+       <img src="assets/images/student/s10.jpg" alt="Mountains" style="width:60%; height:50%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+    </div>
+  </div>
+
+
+
+<!-- footers 20 -->
+  <section class="w3l-footers-20">
+    <div class="footers20">
+      <div class="container">
+        <div class="footers20-content">
+          <div class="d-grid grid-col-4 grids-content">
+            <div class="column">
+              <h4>Address</h4>
+              <p class="contact-para3">Philippines 4431 Region V Camarines Sur, Alfelor St, San Miguel Iriga City</p>
+              <a href="mailto:hello@w3layouts.com">
+                <p class="contact-mail mt-2">jcfoodstopcatering@gmail.com</p>
+              </a>
+            </div>
+            <div class="column">
+              <h4>Book a Table</h4>
+              <p>Call us once, and you will love us forever</p>
+              <a href="tel:+1-2345-678-11">
+                <p class="contact-phone mt-2">09090978654</p>
+                <p class="contact-phone mt-2">09478259195</p>
+
+              </a>
+            </div>
+            <div class="column">
+              <h4>Opening hours</h4>
+              <p>Monday - Sunday</p>
+              <p class="mt-2">08:00 am to 5:00 pm</p>
+            </div>
+            <div class="column">
+              <h4>Twitter feed</h4>
+              <a href="blog-single.html">
+                <p><span class="fa fa-twitter mr-2"></span>Celebrate life, celebrate with us</p>
+              </a>
+              <p class="small mt-2"><span class="fa fa-clock-o"></span> May 17, 2020</p>
+            </div>
+          </div>
+          <div class="d-grid grid-col-3 grids-content1 bottom-border">
+            <div class="columns copyright-grid">
+              <p class="copy-footer-29">© 2020 JC's Foodstop and Catering Services. All rights reserved | Designed by <a
+                  href="https://w3layouts.com">W3layouts</a></p>
+            </div>
+            <div class="columns text-right social-grid">
+              <ul class="social">
+                <li><a href="https://www.facebook.com/JcFoodstopAndCateringServices/"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
+                <li><a href="#url"><span class="fa fa-instagram" aria-hidden="true"></span></a></li>
+                <li><a href="#url"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+<!-- END GRID -->
+</div>
+<script src="port.js">
+  </script>
+
+
+
+
+</body>
+  <!-- move top -->
+  <button onclick="topFunction()" id="movetop" title="Go to top">
+    &#10548;
+  </button>
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("movetop").style.display = "block";
+      } else {
+        document.getElementById("movetop").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- /move top -->
+  </section>
+
+  <!-- jQuery and Bootstrap JS -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+
+  <!-- libhtbox -->
+  <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+
+
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+  <script src="assets/js/counter.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.popup-with-zoom-anim').magnificPopup({
+        type: 'inline',
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+      });
+
+      $('.popup-with-move-anim').magnificPopup({
+        type: 'inline',
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-slide-bottom'
+      });
+    });
+  </script>
+
+  <!-- testimonials owlcarousel -->
+  <script src="assets/js/owl.carousel.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.owl-two').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: false,
+        responsiveClass: true,
+        autoplay: false,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        autoplayHoverPause: false,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          480: {
+            items: 1,
+            nav: false
+          },
+          667: {
+            items: 1,
+            nav: false
+          },
+          1000: {
+            items: 1,
+            nav: false
+          }
+        }
+      })
+    })
+  </script>
+  <!-- //script for Testimonials-->
+
+  <!-- script for food-->
+  <script>
+    $(document).ready(function () {
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true
+          },
+          480: {
+            items: 2,
+            nav: true,
+            margin: 20
+          },
+          769: {
+            items: 3,
+            nav: true,
+            margin: 20
+          },
+          1280: {
+            items: 4,
+            nav: true,
+            loop: true,
+            margin: 25
+          }
+        }
+      })
+    })
+  </script>
+  <!-- //script for food-->
+
+  <!-- disable body scroll which navbar is in active -->
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+  <!-- disable body scroll which navbar is in active -->
+  <!--/MENU-JS-->
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 80) {
+        $("#site-header").addClass("nav-fixed");
+      } else {
+        $("#site-header").removeClass("nav-fixed");
+      }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+      $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+      $(window).on("resize", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+      });
+    });
+  </script>
+  <!--//MENU-JS-->
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
+
